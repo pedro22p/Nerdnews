@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>Cadastro - NerdNews</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Segoe UI, Arial;
+background:linear-gradient(135deg,#0047AB,#002f6c);
+color:white;
+}
+
+/* caixa */
+
+.cadastro-box{
+background:white;
+color:black;
+padding:40px;
+border-radius:10px;
+width:300px;
+text-align:center;
+box-shadow:0px 10px 30px rgba(0,0,0,0.4);
+}
+
+/* titulo */
+
+.cadastro-box h2{
+margin-bottom:20px;
+}
+
+/* inputs */
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+/* botão */
+
+button{
+width:100%;
+padding:10px;
+margin-top:10px;
+background:#0047AB;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+button:hover{
+background:#003080;
+}
+
+/* voltar */
+
+.voltar{
+margin-top:15px;
+font-size:14px;
+}
+
+.voltar a{
+color:#0047AB;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="cadastro-box">
+
+<h2>Criar Conta</h2>
+
+<input type="text" id="novoUsuario" placeholder="Usuário">
+
+<input type="password" id="novaSenha" placeholder="Senha">
+
+<input type="password" id="senha" placeholder="Confirmar Senha">
+
+<input type="file" id="fotoPerfil">
+
+<button onclick="cadastrar()">Cadastrar</button>
+
+<p id="msg"></p>
+
+<div class="voltar">
+Já tem conta? <a href="login.html">Fazer login</a>
+</div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+
+</html>

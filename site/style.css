@@ -1,0 +1,72 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0047AB; /* Um azul mais agradável que o 'blue' puro */
+    color: white;              /* Cor das letras */
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;    /* Alinha os itens um abaixo do outro */
+    align-items: center;       /* Centraliza horizontalmente */
+    text-align: center;        /* Centraliza o texto */
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+/* Estilo para os botões */
+button {
+    background-color: #ffcc00; /* Amarelo estilo "Nerd" */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800; /* Escurece ao passar o mouse */
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none; /* Tira o sublinhado dos links */
+}
+
+.news-container {
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.news-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.news-item h3 {
+    margin-top: 0;
+    color: #ffcc00;
+}
+
+.news-item p {
+    color: #e0e0e0;
+}
+
+.news-item a {
+    color: #ffcc00;
+    font-weight: bold;
+}
